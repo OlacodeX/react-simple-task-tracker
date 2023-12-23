@@ -15,10 +15,15 @@ function App() {
         <Routes>
           <Route
             path='/'
+            // exact means go to route with only / and not / followed by any other thing
             exact
+            // element is the component for the specific route
             element={<Home showAddTask={showAddTask} />}
           ></Route>
-          <Route path='/about' element={<About />}></Route>
+          <Route 
+            path='/about' 
+            element={<About />}
+          ></Route>
         </Routes>
         <Footer />
       </div>
